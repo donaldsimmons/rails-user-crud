@@ -1,0 +1,18 @@
+<% @page_title = "Create New User" %>
+
+<h3>Welcome!</h3>
+<p class="content">Welcome to the site!</p>
+
+<p class="content">Please complete your profile:</p>
+
+<div id="full_signup_form">
+	<%= form_for(:user, :url => {:action => 'create'}) do |f|%>
+
+		<%= render(:partial => "form", :locals => {:f => f}) %>
+	
+		<%= submit_tag("Create User", :id => "create_user_button") %>
+
+	<% end %>
+</div>
+
+<%= link_to("<< Back to Home Page", {:controller => 'access', :action => 'login'}, :id => 'back_link') %>

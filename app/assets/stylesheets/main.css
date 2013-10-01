@@ -109,6 +109,14 @@ a:hover {
     background-color: #919191;
     width: 300px;
     padding: 10px 5px 10px;
+    
+    margin-left: 50px;
+}
+
+#create_user_button {
+
+	margin-top: 10px;
+
 }
 
 #stat_list {
@@ -186,6 +194,8 @@ a:hover {
 #back_link {
     font-size: .9em;
     margin: 40px 10px -20px;
+
+	display: block;
 }
 
 #delete_user_link {

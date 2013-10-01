@@ -55,6 +55,34 @@ a:hover {
     padding-bottom: 10px;
 }
 
+.home_label {
+
+	margin-left: 35px;
+
+}
+
+.home_input {
+
+	margin-left: 5px;
+
+}
+
+#login_input {
+
+	margin-left: 8px;
+	
+}
+
+.home_button {
+
+	float: right;
+	
+	margin-right: 22px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	
+}
+
 #signup_form {
     border: 2px solid  #949494;
     border-radius: 10px;

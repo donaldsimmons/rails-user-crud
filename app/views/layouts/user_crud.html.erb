@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title><%= @page_title %></title>
+		<title>User CRUD | <%= @page_title %></title>
 		<%= stylesheet_link_tag :main, :media=>"all", "data-turbolinks-track"=>true %> 
 	</head>
 	<body>
 		<div id="container">
 			<header>
-				<h1 id="page_head"><?php echo $page_title; ?></h1>
+				<h1 id="page_head"><%= @page_title %></h1>
 			</header>
 			<div id="content">  
 				<%= yield %>			

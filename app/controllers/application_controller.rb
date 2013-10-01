@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 
 	protected
 	
-	def confirm_logged_in
+	def confirm_logged_in_status
 	
 		unless session[:user_id]
 		

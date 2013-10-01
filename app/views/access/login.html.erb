@@ -1,0 +1,29 @@
+<% @page_title = "Login" %>
+
+<div id="login_form">
+    <h3>User Log-In</h3>
+    <%= form_tag(:action => 'attempt_user_login') do %>
+    
+    	<%= label_tag(:username, "Username:", :class => 'home_label') %>
+    	<%= text_field_tag(:username, "",:class => 'home_input') %>
+    
+    	<%= label_tag(:password, "Password:", :class => 'home_label') %>
+    	<%= text_field_tag(:password, "",:class => 'home_input',:id => 'login_input') %>
+   
+   		<%= submit_tag("Log In", :class=>"home_button") %>
+    <% end %>
+</div> <!-- End LogIn Form Div-->
+<div id="signup_form">
+    <h3>Sign-Up Today!</h3>
+    <%= form_tag(:controller => 'users', :action => 'new') do %>
+    
+    	<%= label_tag(:first_name, "First Name:", :class => 'home_label') %>
+    	<%= text_field_tag(:first_name, "", :class => 'home_input') %>
+    
+    	<%= label_tag(:last_name, "Last Name:", :class => 'home_label') %>
+    	<%= text_field_tag(:last_name, "", :class => 'home_input') %>
+    	
+    	<%= submit_tag("Log In", :class => "home_button") %>
+    	
+    <% end %>
+</div> <!-- End SignUp Form Div-->  

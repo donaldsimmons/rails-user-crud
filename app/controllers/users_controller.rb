@@ -6,7 +6,7 @@ class UsersController < ApplicationController
 	
 	# restricts access to actions until the user is logged in
 	#	-- defined in parent -- redirects to login page if not confirmed
-	before_filter :confirm_logged_in_status
+	before_filter :confirm_logged_in_status, :except => 'new'
 	
 	
 	# renders default view when UserController is used
